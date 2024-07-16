@@ -1,2 +1,7 @@
 a = float(input())
-print('High' if a>=1.0 elif a>=0.5 'Middle' else 'Low')
+if a >= 1.0:
+    print('High')
+elif a>= 0.5:
+    print('Middle')
+else:
+    print('Low')
