@@ -2,5 +2,5 @@ a = list(map(int, input().split()))
 for i in a:
     if i == 0:
         b = len(a)-a.index(i)
-        print(sum(a[:-b]))
+        print(sum(a[-b-3:-b]))
         break
