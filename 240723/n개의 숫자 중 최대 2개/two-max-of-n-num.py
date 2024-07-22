@@ -11,7 +11,7 @@ else:
     
     for i in num[2:]:
         if i>_1:
-            _1, _2 = i, _2
+            _1, _2 = i, _1
         elif i>_2:
             _2 = i
     
