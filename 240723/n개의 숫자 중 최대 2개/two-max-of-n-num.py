@@ -1,7 +1,8 @@
 a = int(input())
 num = list(map(int, input().split()))
+
 if num.count(max(num)) == 2:
-    print(max(num, max(num)))
+    print(max(num), max(num))
 else:
     if num[0] > num[1]:
         _1, _2 = num[0], num[1]
