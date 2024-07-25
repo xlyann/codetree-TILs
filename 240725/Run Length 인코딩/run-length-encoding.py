@@ -1,8 +1,8 @@
 string = input()
 start = string[0]
-count = 1
+count = 0
 RLE = ''
-for i in range(1, len(string)):
+for i in range(len(string)):
     if start != string[i]:
         RLE += str(start)
         RLE += str(count)
