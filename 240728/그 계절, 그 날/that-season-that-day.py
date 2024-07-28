@@ -1,13 +1,10 @@
 def yun_year(Y):
     if Y%4 != 0:
         return False
-    
     if Y%100 != 0:
         return True
-    
-    if Y%400 != 0:
+    if Y%400 == 0:
         return True
-    
     return False
 
 def month(Y, M):
