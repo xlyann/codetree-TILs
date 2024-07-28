@@ -17,16 +17,16 @@ def month(Y, M):
     return 31
 
 def day_true(Y, M, D):
-    if D <= month(Y, M):
+    if M <= 12 and D <= month(Y, M):
         return True
     return False
 
 def season(M):
     if 3<= M and M<=5:
         print('Spring')
-    if 6<= M and M<=8:
+    elif 6<= M and M<=8:
         print('Summer')
-    if 9<= M and M<=11:
+    elif 9<= M and M<=11:
         print('Fall')
     else:
         print('Winter')
