@@ -1,7 +1,7 @@
 def in_3(num):
     num = str(num)
     for i in num:
-        if int(i)%3 == 0:
+        if i in ['3', '6', '9']:
             return True
     return False
 
