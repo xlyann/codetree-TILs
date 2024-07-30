@@ -11,7 +11,7 @@ def list_max(n):
     else:
         memo.append(_list[n-1])
     
-    return list_max(n-1)
+    return memo[n]
 
 a = int(input())
 _list = list(map(int, input().split()))
