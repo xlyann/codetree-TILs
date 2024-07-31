@@ -10,11 +10,11 @@ def lcm(a, b):
 
     return lcm(b, a%b)
 
-def gcm(a, b):
+def gcd(a, b):
     return a*b//lcm(a, b)
 
 num = 1
 for i in range(n):
-    num = gcm(num, _list[i])
+    num = gcd(num, _list[i])
 
 print(num)
