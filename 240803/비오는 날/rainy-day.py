@@ -5,8 +5,8 @@ class rain:
         self.weather = weather
     
 def vs(s_1, s_2):
-    year1, month1, day1 = s_1.split('-')
-    year2, month2, day2 = s_1.split('-')
+    year1, month1, day1 = map(int, s_1.split('-'))
+    year2, month2, day2 = map(int, s_2.split('-'))
     if year1 != year2:
         return year1 > year2
     if month1 != month2:
