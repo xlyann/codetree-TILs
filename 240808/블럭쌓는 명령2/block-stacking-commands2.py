@@ -3,11 +3,6 @@ block = [0]*N
 for j in range(K):
     init, final = map(int, input().split())
     for i in range(init, final + 1):
-        block[i] += 1
+        block[i-1] += 1
 
-max_val = 0
-for h in block:
-    if h>max_val:
-        max_val = h
-
-print(max_val)
+print(max(block))
