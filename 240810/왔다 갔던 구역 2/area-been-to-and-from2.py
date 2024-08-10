@@ -19,11 +19,15 @@ for a, b in save:
     else:
         if point - a < 0:
             line = [0]*(abs(point-a)) + line
+            point = 0
+            for i in range(a):
+                line[i] += 1
         
-        for i in range(a):
-            line[i] += 1
-        
-        point = 0
+        else:
+            for i in range(point-a, point):
+                line[i] += 1
+            
+            point -= a
     
 count = 0
 for over_2 in line:
