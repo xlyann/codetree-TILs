@@ -13,4 +13,7 @@ for i in range(n):
     else:
         count += 1
 
-print(max(save))
+if n == 1:
+    print(1)
+else:
+    print(max(save))
