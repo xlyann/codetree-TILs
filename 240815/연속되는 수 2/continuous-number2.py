@@ -12,6 +12,9 @@ for i in range(n):
         count = 1
     else:
         count += 1
+    
+    if i == n-1:
+        save.append(count)
 
 if n == 1:
     print(1)
