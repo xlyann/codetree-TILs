@@ -25,7 +25,10 @@ move(times_b, 'b')
 
 limit = min(len(move_a), len(move_b))
 
+meet = -1
 for i in range(1, limit):
     if move_a[i] == move_b[i]:
-        print(i)
+        meet = i
         break
+
+print(meet)
