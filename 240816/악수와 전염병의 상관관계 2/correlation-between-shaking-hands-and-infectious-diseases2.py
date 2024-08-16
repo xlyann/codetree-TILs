@@ -18,7 +18,7 @@ for person1, person2 in hand:
     if infect[person1] == 0 and infect[person2] == 0:
         continue
     
-    if infect[person1] == 1:
+    if infect[person1] == 1 and infect[person2] == 0:
         if cnt[person1] == 0:
             continue
     
@@ -28,7 +28,7 @@ for person1, person2 in hand:
     
         cnt[person1] -= 1
     
-    else:
+    elif infect[person1] == 0 and infect[person2] == 1:
         if cnt[person2] == 0:
             continue
         
@@ -37,6 +37,12 @@ for person1, person2 in hand:
             infect[person1] = 1
         
         cnt[person2] -= 1
-
+    
+    else:
+        if cnt[person1] > 0:
+            cnt[person1] -= 1
+        if cnt[person2] > 0:
+            cnt[person2] -= 1
+    
 for virus in infect[1:]:
     print(virus, end = '')
