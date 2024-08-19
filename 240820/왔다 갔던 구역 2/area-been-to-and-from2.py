@@ -21,7 +21,7 @@ for _ in range(n):
     distance = int(distance)
 
     if direction == 'R':
-        for i in range(1, distance+1):
+        for i in range(0, distance):
             location[start+i] +=1
         start += distance
 
