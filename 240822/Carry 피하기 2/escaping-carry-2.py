@@ -1,6 +1,6 @@
 n = int(input())
 num_list = [int(input()) for _ in range(n)]
-max_sum = 0
+max_sum = -1
 
 def carry(a, b, c):
     new = a+b+c
