@@ -6,7 +6,7 @@ def win(a, b):
         return 1
     if a >= 14 and win_col(a, b):
         return 1
-    if a <= 14 and b >= 14 and win_dia_L(a, b):
+    if a <= 14 and b <= 14 and win_dia_L(a, b):
         return 1
     if a>=4 and b>=4 and win_dia_R(a, b):
         return 1
