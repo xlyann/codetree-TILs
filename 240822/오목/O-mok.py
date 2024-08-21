@@ -4,7 +4,7 @@ winner = 0
 def win(a, b):
     if b <= 14 and win_row(a, b):
         return 1
-    if a >= 14 and win_col(a, b):
+    if a <= 14 and win_col(a, b):
         return 1
     if a <= 14 and b <= 14 and win_dia_L(a, b):
         return 1
