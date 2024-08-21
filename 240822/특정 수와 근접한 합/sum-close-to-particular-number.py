@@ -1,6 +1,6 @@
 a, b = map(int, input().split())
 num = list(map(int, input().split()))
-ans = 9999999
+ans = 99999999
 
 sum_val = sum(num)
 
