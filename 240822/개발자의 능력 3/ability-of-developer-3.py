@@ -1,5 +1,5 @@
 num = list(map(int, input().split()))
-ans = 99999
+ans = 9999999
 
 for i in range(6):
     for j in range(i+1, 6):
