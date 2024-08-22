@@ -1,8 +1,7 @@
 n, k = map(int, input().split())
 num = list(tuple(input().split()) for _ in range(n))
 
-num.sort(key = lambda x:-int(x[0]))
-arr = [0]*(int(num[0][0])+1)
+arr = [0]*10001
 
 for elem1, elem2 in num:
     if elem2 == 'G':
