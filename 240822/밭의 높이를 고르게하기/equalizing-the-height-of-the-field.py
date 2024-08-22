@@ -1,4 +1,4 @@
-n, times, height = map(int, input().split())
+n, height, times = map(int, input().split())
 ground = list(map(int, input().split()))
 
 ans = 999999
