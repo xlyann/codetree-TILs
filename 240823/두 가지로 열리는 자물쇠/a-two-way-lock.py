@@ -10,7 +10,7 @@ def password(x, y, z):
 
 def check(x, y):
     global n
-    if abs(x-y)<=2 or (x-y) % n<=2:
+    if abs(x-y)<=2 or x+n-y<=2 or y+n-x<=2:
         return 1
     return 0
 
@@ -19,5 +19,6 @@ for i in range(1, n+1):
     for j in range(1, n+1):
         for k in range(1, n+1):
             ans += password(i, j, k)
+
 
 print(ans)
