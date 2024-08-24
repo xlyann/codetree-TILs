@@ -8,7 +8,7 @@ for i in range(record):
     stomach = [0]*(people+1)
     guess = True
     for who, num, second in eat:
-        if i == num:
+        if i == num and pacient[who] == 0:
             pacient[who] = 1
             stomach[who] = second+1
     for who_sick, sick_time in sick:
