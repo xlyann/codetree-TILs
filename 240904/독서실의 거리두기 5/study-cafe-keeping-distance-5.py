@@ -5,22 +5,17 @@ ans = 0
 for i in range(n):
     if seat[i] == 1:
         continue
-    left, right = 0, 0
+    seat[i] = 1
+    start = seat.index(1)
+    diff_min = 90
 
-    for j in range(i, -1, -1):
+    for j in range(start+1, n):
         if seat[j] == 1:
-            break
-        left += 1
-
-    for k in range(i, n):
-        if seat[k] == 1:
-            break
-        right += 1
+            diff = j-start
+            diff_min = min(diff_min, diff)
+            start = j
     
-    if i == 0:
-        ans = max(ans, right)
-    elif i == n-1:
-        ans = max(ans, left)
-    else:
-        ans = max(ans, min(left, right))
+    ans = max(ans, diff_min)
+    seat[i] = 0
+
 print(ans)
