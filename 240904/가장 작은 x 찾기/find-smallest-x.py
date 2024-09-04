@@ -10,8 +10,10 @@ def right(n):
         return False
     return True
 
-for i in range(1, 11):
-    if right(i):
-        ans = i
+find = 1
+while True:
+    if right(find):
+        ans = find
         break
+    find += 1
 print(ans)
