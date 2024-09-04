@@ -15,7 +15,7 @@ def possible(n):
     return True
 
 ans = 101
-for i in range(n, min(num[0], num[-1]), -1):
+for i in range(100, min(num[0], num[-1]), -1):
     if possible(i):
         ans = min(ans, i)
         
