@@ -6,7 +6,6 @@ def in_range(a):
     return 0<=a and a<=n-1
 
 boom = {}
-ans = 0
 for i in range(n):
     bomb = num[i]
     for j in range(i-k, i+k+1):
@@ -19,4 +18,7 @@ for i in range(n):
 
 new_boom = sorted(boom.items(), key = lambda x:(-x[1], -x[0]))
 
-print(new_boom[0][0])
+if boom == {}:
+    print(0)
+else:
+    print(new_boom[0][0])
