@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 num = list(map(int, input().split()))
 
-for i in range(max(num), 5001):
+for i in range(100, 101):
     save = []
     limit = 0
     for j in range(n):
@@ -13,8 +13,8 @@ for i in range(max(num), 5001):
             save.append(limit)
             limit = num[j]
             if j == n-1:
-                save.append(j)
+                save.append(num[j])
 
-    if len(save) == m:
+    if len(save) <= m:
         print(i)
         break
