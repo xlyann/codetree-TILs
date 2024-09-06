@@ -11,6 +11,4 @@ for i in range(1, n+1):
             cnt_1 += 1
     if cnt >= i or (i-cnt <= l and cnt_1 >= l):
         ans = i
-    else:
-        print(ans)
-        break
+print(ans)
