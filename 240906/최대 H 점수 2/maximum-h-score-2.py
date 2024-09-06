@@ -9,6 +9,6 @@ for i in range(1, n+1):
             cnt += 1
         if i-j == 1:
             cnt_1 += 1
-    if cnt >= i or (i-cnt <= l and cnt_1 >= l):
+    if cnt >= i or (cnt+cnt_1>=i and cnt_1 <= l):
         ans = i
 print(ans)
