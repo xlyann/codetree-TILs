@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 num = list(map(int, input().split()))
 
-for i in range(100, 101):
+for i in range(max(num), 5001):
     save = []
     limit = 0
     for j in range(n):
