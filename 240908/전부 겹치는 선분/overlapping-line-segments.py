@@ -5,7 +5,7 @@ ans = 0
 for i in range(1, 101):
     overlap = True
     for a, b in line:
-        if a > i or i < b:
+        if i < a or b < i:
             overlap = False
     if overlap:
         ans = 1
