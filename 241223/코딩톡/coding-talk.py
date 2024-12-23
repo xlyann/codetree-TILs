@@ -11,8 +11,16 @@ for i in range(m):
     if i == p-1 and save[i][1] == '0':
         people.clear()
         break
-    if i == p-1 and i != 0 and save[i][1] == save[i-1][1]:
-        people.remove(save[i-1][0])
+    if i == p-1 and i != 0:
+        for j in range(1, 100):
+            if save[i][1] == save[i-j][1] and i-j >= 0:
+                if save[i-j][0] in people:
+                    people.remove(save[i-j][0])
+                else:
+                    continue
+            else:
+                break
+            
     if save[i][0] in people:
         people.remove(save[i][0])
 
