@@ -7,6 +7,9 @@ for i in range(m):
     who, read = input().split()
     if i < p-1:
         continue
+    if i == p-1 and read == '0':
+        people.clear()
+        break
     if who in people:
         people.remove(who)
 
